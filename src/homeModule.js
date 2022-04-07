@@ -4,7 +4,8 @@ function createHome() {
     homeContent.classList.add('home-content');
 
     const restaurantTitle = document.createElement('h1');
-    restaurantTitle.classList.add('restraurant-title');
+    restaurantTitle.classList.add('restaurant-title');
+    restaurantTitle.innerText = "Wow Burger!";
     
     const restaurantTime = createDiv("", "restaurant-time");
 
@@ -12,12 +13,14 @@ function createHome() {
     restaurantTime.appendChild(createHoursOpen("Saturday", "10am-8pm"));
     restaurantTime.appendChild(createHoursOpen("Sunday and Holiday", "10am-6pm"));
 
-    homeContent.appendChild(restaurantTitle.innerText = "Wow Burger!");
-    homeContent.appendChild(createDiv("Best burger in town since 1995", "restaurant-title"));
+    homeContent.appendChild(restaurantTitle);
+    homeContent.appendChild(createDiv("Best burger in town!", "restaurant-info"));
     homeContent.appendChild(restaurantTime);
     homeContent.appendChild(createDiv("Come visit as in 3988 Despard Street."));
 
     homeModule.appendChild(homeContent);
+
+    return homeModule;
 
 }
 
@@ -52,4 +55,4 @@ function loadHome() {
     main.appendChild(createHome());
 }
 
-export default loadHome;
+export default loadHome

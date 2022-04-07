@@ -67,3 +67,9 @@ body {
     font-size: 1.4rem;
     backdrop-filter: blur(2px);
 }
+
+.hello-world {
+    width: 1000px;
+    height: 1000px;
+    background-color: #000;
+}
