@@ -1,1 +1,3 @@
-alert("hello world")
+import loadHome from './homeModule';
+
+loadHome();
