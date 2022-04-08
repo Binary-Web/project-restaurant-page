@@ -1,22 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-image: url('./img/body-bg.jpg');;
     background-repeat: repeat;
     font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
 }
 .container {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     border: 1px solid #000;
     box-shadow: 0 5px 10px rgb(0,0,0,0.5);
     backdrop-filter: blur(2px);
 }
 
+/* NAVBAR ----------------------- */
+.navbar {
+    position: fixed;
+    background-color: #EEB483;
+    width: 100%;
+    top: 10%;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-item {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    background-color: #c3936b;
+}
+
+/* MODULE HOME ---------------------------------- */
 .module-home {
     color: #fff;
-    background-image: url('./img/bg-burger.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +74,7 @@ body {
     font-family: 'Pacifico', cursive;
     margin: 0;
     
-    font-size: clamp(5rem, 10vw, 7rem)
+    font-size: clamp(4rem, 10vw, 7rem)
 }
 
 .restaurant-info {
@@ -72,4 +109,60 @@ body {
     width: 1000px;
     height: 1000px;
     background-color: #000;
+}
+
+
+/* MODULE MENU */
+.module-menu {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('./img/bg-menu.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    width: 100%;
+}
+
+.menu {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255,255,255, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.menu-item:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.text {
+    font-size: 4rem;
+    text-align: center;
+}
+.line {
+    border: 1px solid #fff;
+}
+
+.module-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.module-title > * {
+    width: 100%;
 }
