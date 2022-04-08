@@ -1,7 +1,11 @@
+import createDiv from "./createDiv";
+
 function createHome() {
+    const bgUrl = './img/bg-burger.avif';
     const homeModule = createDiv("", "module-home");
     const homeContent = document.createElement('div');
     homeContent.classList.add('home-content');
+    homeModule.style.backgroundImage = `url('${bgUrl}')`;
 
     const restaurantTitle = document.createElement('h1');
     restaurantTitle.classList.add('restaurant-title');
@@ -42,17 +46,10 @@ function createHoursOpen(day, time) {
     return div;
 }
 
-
-function createDiv(text, className) {
-    const div = document.createElement('div');
-    div.innerText = text;
-    div.classList.add(className);
-    return div;
-}
-
 function loadHome() {
     const main = document.querySelector(".content");
     main.appendChild(createHome());
 }
+
 
 export default loadHome
