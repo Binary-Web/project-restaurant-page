@@ -20,7 +20,6 @@ function createHome() {
     homeContent.appendChild(restaurantTitle);
     homeContent.appendChild(createDiv("Best burger in town!", "restaurant-info"));
     homeContent.appendChild(restaurantTime);
-    homeContent.appendChild(createDiv("Come visit as in 3988 Despard Street."));
 
     homeModule.appendChild(homeContent);
 
