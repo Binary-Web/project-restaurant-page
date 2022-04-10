@@ -48,6 +48,10 @@ body {
     background-color: #c3936b;
 }
 
+.navbar-item.active {
+    background-color: #007500;
+}
+
 /* MODULE HOME ---------------------------------- */
 .module-home {
     color: #fff;
@@ -238,4 +242,15 @@ body {
     flex-wrap: wrap;
     background-color: #007500;
     padding: 0.5rem;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+span {
+    color: #fff;
 }

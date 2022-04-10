@@ -68,7 +68,8 @@ function createFormControl(labelValue ,id, inputType, optionalType = null) {
 }
 
 function loadContact() {
-    const main = document.querySelector('.content');
+    const main = document.querySelector(".main");
+    main.innerHTML = "";
     main.appendChild(createContact());
 }
 

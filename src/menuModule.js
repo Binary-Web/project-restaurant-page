@@ -75,7 +75,8 @@ function createMenuCard(name, price) {
 }
 
 function loadMenu() {
-    const main = document.querySelector(".content");
+    const main = document.querySelector(".main");
+    main.innerHTML = "";
     main.appendChild(createMenu());
 }
 

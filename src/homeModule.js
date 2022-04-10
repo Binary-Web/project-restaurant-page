@@ -46,7 +46,8 @@ function createHoursOpen(day, time) {
 }
 
 function loadHome() {
-    const main = document.querySelector(".content");
+    const main = document.querySelector(".main");
+    main.innerHTML = "";
     main.appendChild(createHome());
 }
 
