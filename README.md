@@ -1,3 +1,3 @@
 # project-restaurant-page
 WEBPACK PRACTICE
-#### <a href="https://binary-web.github.io/project-restaurant-page/">Live Demo</a>
+#### <a href="https://ben-cornico.github.io/project-restaurant-page/">Live Demo</a>
